@@ -1,27 +1,20 @@
 import socket
 
-def ask_session():
-  nb = input("Enter The number of Session : ")
-  display_breaker()
-  return int(nb)
-
-
-def ask_media_with_session_id():
-  nb = input("Session ID|media : \n")
-  return nb.split('|')
-
-def display_session(session):
-  print(f"ID: {session.id}")
-  print(f"Port: {session.port}\n")
-
 def display_breaker():
   print("\n" + "#########"*3 + "\n")
 
+def display_menu():
+  return input("l:List | c:Change Track | k:kill Session | a:Add Session \n")
+
 def display_Track_list():
-  print("## Track ##")
-  print("|---------|")
-  print("|  Tree   |")
-  print("|  god    |")
-  print("|  kid    |")
-  print("|  water  |")
-  print("|---------|\n")
+  print("               Track              ")
+  print("|--------------------------------|")
+  print("| 1~ [event] champ-gregorien     |")
+  print("| 2~ [event] corridor-discussion |")
+  print("| 3~ [event] lecture-text        |")
+  print("| 4~ [loop]  classe-gym          |")
+  print("| 5~ [loop]  classe-musique      |")
+  print("| 6~ [loop]  corridor            |")
+  print("| 7~ [loop]  grillon             |")
+  print("| 8~ [loop]  riviere             |")
+  print("|--------------------------------|\n")
